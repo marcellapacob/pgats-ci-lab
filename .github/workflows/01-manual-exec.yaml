@@ -5,7 +5,7 @@ name: 'Execução Manual'
 
 # Regras de disparo (gatilhos/triggers)
 # Gatilho de execução manual = workflow_dispatch
-on: 
+on:
   workflow_dispatch:
 
 # Trabalhos/tarefas dentro do pipeline = jobs
@@ -21,7 +21,7 @@ jobs:
 
       # Instalação do Node
       - uses: actions/setup-node@v4
-        with: 
+        with:
           node-version: 22.x
 
       # Instalação do Yarn
